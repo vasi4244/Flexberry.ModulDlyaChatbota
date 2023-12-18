@@ -1,0 +1,65 @@
+﻿{
+  "applicationCaption": "Modul_dlya_chatbota",
+  "applicationTitle": "Modul_dlya_chatbota",
+  "items": [
+    {
+      "link": null,
+      "menuName": "кадры",
+      "caption": "Кадры",
+      "title": "Кадры",
+      "children": [
+        {
+          "link": "i-i-s-modul-dlya-chatbota-должность-l",
+          "menuName": null,
+          "caption": "Должность",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-modul-dlya-chatbota-отдел-l",
+          "menuName": null,
+          "caption": "Отдел",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-modul-dlya-chatbota-сотрудники-l",
+          "menuName": null,
+          "caption": "Сотрудники",
+          "title": "",
+          "children": null
+        }
+      ]
+    },
+    {
+      "link": null,
+      "menuName": "работа-с-чат-ботом",
+      "caption": "Работа с чат-ботом",
+      "title": "Работа с чат-ботом",
+      "children": [
+        {
+          "link": "i-i-s-modul-dlya-chatbota-настройка-опр-l",
+          "menuName": null,
+          "caption": "Настройка опр",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-modul-dlya-chatbota-опрос-l",
+          "menuName": null,
+          "caption": "Опрос",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-modul-dlya-chatbota-анкетирование-l",
+          "menuName": null,
+          "caption": "Анкетирование",
+          "title": "",
+          "children": null
+        }
+      ]
+    }
+  ],
+  "mobile": true
+}

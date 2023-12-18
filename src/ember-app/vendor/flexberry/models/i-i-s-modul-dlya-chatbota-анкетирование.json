@@ -1,0 +1,120 @@
+﻿{
+  "name": "IISModul_dlya_chatbotaАнкетирование",
+  "modelName": "i-i-s-modul-dlya-chatbota-анкетирование",
+  "className": "Анкетирование",
+  "nameSpace": "IIS.Modul_dlya_chatbota",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "дата",
+      "type": "date",
+      "flexberryType": "DateTime",
+      "notNull": false,
+      "defaultValue": "Now",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "опрос",
+      "relatedTo": "i-i-s-modul-dlya-chatbota-опрос",
+      "inverse": null
+    }
+  ],
+  "hasMany": [
+    {
+      "name": "список",
+      "relatedTo": "i-i-s-modul-dlya-chatbota-список",
+      "inverse": "анкетирование"
+    }
+  ],
+  "projections": [
+    {
+      "name": "АнкетированиеE",
+      "modelName": "i-i-s-modul-dlya-chatbota-анкетирование",
+      "attrs": [
+        {
+          "name": "дата",
+          "caption": "Дата",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": "Название",
+          "lookupValueField": "название",
+          "relationName": "Опрос",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "название",
+              "caption": "Название",
+              "hidden": true,
+              "index": 2
+            }
+          ],
+          "index": 1,
+          "type": "standard",
+          "caption": "Опрос",
+          "name": "опрос",
+          "relatedTo": "i-i-s-modul-dlya-chatbota-опрос",
+          "inverse": null
+        }
+      ],
+      "hasMany": [
+        {
+          "projectionName": "СписокE",
+          "caption": "Список",
+          "name": "список",
+          "relatedTo": "i-i-s-modul-dlya-chatbota-список",
+          "inverse": null
+        }
+      ]
+    },
+    {
+      "name": "АнкетированиеL",
+      "modelName": "i-i-s-modul-dlya-chatbota-анкетирование",
+      "attrs": [
+        {
+          "name": "дата",
+          "caption": "Дата",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Опрос",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "название",
+              "caption": "Название",
+              "hidden": false,
+              "index": 1
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Название",
+          "name": "опрос",
+          "relatedTo": "i-i-s-modul-dlya-chatbota-опрос",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}
